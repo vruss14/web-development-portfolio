@@ -62,7 +62,7 @@ nav {
     display: flex;
 }
 
-a {
+nav a {
     margin-left: 2.5rem;
     color: #ffffff;
     text-decoration: none;
@@ -108,6 +108,14 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+#large-square a {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #large-square {
