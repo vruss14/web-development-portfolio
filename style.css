@@ -1,3 +1,5 @@
+/* Declaring variables for the page's color scheme */
+
 :root {
     --pink: #FFA07A;
     --green: #90EE90;
@@ -8,7 +10,7 @@
     --black: #000000;
 }
 
-/* Styling for main content and border around it */
+/* Styling for the main content and the border around it */
 
 body {
     padding: 5%;
@@ -26,10 +28,24 @@ main {
     padding: 8rem;  
 }
 
-/* Set 1rem to 10px instead of 16px */
+/* Set 1rem to 10px instead of 16px, and styling for headers/paragraph text */
 
 html {
     font-size: 62.5%;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 5rem;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: var(--darkturq);
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -42,17 +58,11 @@ p {
 
 header {
     background-color: var(--darkturq);
-    color: #ffffff;
+    color: var(--white);
     padding: 5rem;
-    font-family: Garamond, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-h1 {
-    display: inline-block;
-    font-size: 5rem;
 }
 
 nav {
@@ -64,15 +74,14 @@ nav {
 
 nav a {
     margin-left: 2.5rem;
-    color: #ffffff;
-    text-decoration: none;
-    border: 0.5rem solid white;
+    color: var(--white);
+    border: 0.5rem solid var(--white);
     border-radius: 2rem;
     padding: 1.5rem;
     text-align: center;
 }
 
-/* Styling for the main contents */
+/* Styling for the About Me section */
 
 #portfolio-img {
     float: left;
@@ -84,15 +93,7 @@ nav a {
     border-radius: 5rem;
 }
 
-h2 {
-    color: var(--darkturq);
-    font-family: Garamond, 'Times New Roman', Times, serif;
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-/* Styling for the Work section */
+/* Styling for the Completed Projects section */
 
 #completed-projects {
     clear: both;
@@ -103,7 +104,7 @@ h2 {
     text-align: center;
 }
 
-.placeholders {
+.project-images {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -122,16 +123,14 @@ h2 {
     width: 80rem;
     height: 40rem;
     padding: 5rem;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 98%;
+    flex: 1 0 98%;
     margin: 1rem;
     position: relative;
     background-image: url("images/search-engine-optimization.jpg");
-    border: 1.5em solid var(--darkturq);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    border: 1.5em solid var(--darkturq);
 }
 
 #large-square:hover {
@@ -232,7 +231,7 @@ h2 {
 
 footer {
     background-color: var(--darkturq);
-    color: white;
+    color: var(--white);
     padding: 5%;
     align-items: center;
     text-align: center;
@@ -245,7 +244,7 @@ footer p {
     margin: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5rem; 
-    border: 0.5rem solid white;
+    border: 0.5rem solid var(--white);
     border-radius: 2rem;
     padding: 1.5rem;
     color: var(--white);
