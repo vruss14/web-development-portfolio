@@ -19,7 +19,7 @@ body {
 
 .content {
     background-color: var(--white);
-    overflow: scroll;
+    overflow: hidden;
     border: 1rem solid var(--green);
     border-radius: 5rem;
 }
