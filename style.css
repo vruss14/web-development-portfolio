@@ -5,7 +5,10 @@
     --green: #90EE90;
     --yellow: #FFFACD;
     --blue: #E0FFFF;
+    --gray: #a09fa1;
+    --dkgray: #555557;
     --darkturq: #00CED1;
+    --dkblue: #1a2d57;
     --white: #FFFFFF;
     --black: #000000;
 }
@@ -14,13 +17,13 @@
 
 body {
     padding: 5%;
-    background-color: var(--blue);
+    background-color: var(--dkblue);
 }
 
 .content {
     background-color: var(--white);
     overflow: hidden;
-    border: 1rem solid var(--green);
+    border: 1rem solid var(--gray);
     border-radius: 5rem;
     max-width: 100%;
 }
@@ -42,7 +45,7 @@ h1 {
 }
 
 h2 {
-    color: var(--darkturq);
+    color: var(--dkblue);
     font-family: Garamond, 'Times New Roman', Times, serif;
     font-size: 3rem;
     font-weight: bold;
@@ -71,6 +74,7 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     display: flex;
+
 }
 
 nav a {
@@ -80,6 +84,7 @@ nav a {
     border-radius: 2rem;
     padding: 1.5rem;
     text-align: center;
+    background-color: var(--dkgray);
 }
 
 /* Styling for the About Me section */
@@ -92,6 +97,10 @@ nav a {
     margin-right: 5rem;
     border: 1rem solid var(--darkturq);
     border-radius: 5rem;
+}
+
+#about-me p {
+    margin-bottom: 1%;
 }
 
 /* Styling for the Completed Projects section */
@@ -111,7 +120,7 @@ nav a {
     flex-direction: row;
     justify-content: center;
 }
-#large-square a {
+#large-square a, .square a {
     display: block;
     position: relative;
     left: 0;
@@ -127,23 +136,23 @@ nav a {
     flex: 1 0 98%;
     margin: 1rem;
     position: relative;
-    background-image: url("images/search-engine-optimization.jpg");
-    background-position: center;
+    background-image: url("images/dingen-screenshot.png");
+    background-position: 5% 0%;
     background-repeat: no-repeat;
     background-size: 100%;
     border: 1rem solid var(--darkturq);
+    z-index: 1;
 }
 
-#large-square:hover {
+#large-square:hover, .square:hover {
     background-color: var(--blue);
-    opacity: 50%;
 }
 
 .square-title {
     padding: 2rem;
     margin-right: 10rem;
     position: absolute;
-    top: 70%;
+    top: 63.5%;
     left: 0%;
     background-color: var(--yellow);
     text-align: left;
@@ -152,11 +161,12 @@ nav a {
 .square {
     width: 33.333%;
     height: 40rem;
-    background-color: var(--pink);
+    background-color: var(--dkblue);
     padding: 2rem;
     flex: 1 0 40rem;
     margin: 1rem;
     position: relative;
+    border: 1rem solid var(--gray);
 }
 
 .square:nth-child(3n) {
@@ -164,13 +174,58 @@ nav a {
 }
 
 .square:nth-child(3n+1) {
-    background-color: var(--green);
+    background-color: var(--dkgray);
 }
 
 .square:hover {
     background-color: var(--blue);
 }
 
+#coding-quiz {
+    background-image: url("images/coding-quiz-screenshot.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#word-guess {
+    background-image: url("images/word-guess-screenshot.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#code-snippets {
+    background-image: url("images/code-snippets-screenshot.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#weather-dashboard {
+    background-image: url("images/weather-forecast-screenshot.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.repo-btn {
+    text-align: center;
+    background-color: var(--dkblue);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 27%;
+}
+
+.repo-btn:hover {
+    background-color: white;
+    color: var(--dkblue);
+    cursor: pointer;
+}
 
 /* Responsive Design styling */
 
@@ -218,14 +273,21 @@ nav a {
 
     #portfolio-img {
         flex-basis: 40rem;
+        margin-top: 5rem;
+    }
+
+    #about-me h2 {
+        text-align: center;
+        margin-top: 5rem;
     }
 
     #large-square {
         flex-basis: 40rem;
+        background-position: center;
     }
 
-    .square-title {
-        margin-left: 3rem;
+    #coding-quiz, #word-guess, #code-snippets, #weather-dashboard {
+        background-size: 100%;
     }
 
     footer {
