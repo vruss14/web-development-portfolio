@@ -20,11 +20,11 @@ This web application is designed for all applications.
 
 Below is a screenshot of the desktop version of the deployed application:
 
-![screenshot of portfolio webpage for desktop](images/portfolio-screenshot-desktop.png)
+![screenshot of portfolio webpage for desktop](images/portfolio-desktop.png)
 
-Below is a screenshot of the mobile version of the deployed application:
+Below is a screenshot of the projects section of the deployed application:
 
-![screenshot of portfolio webpage for desktop](images/portfolio-screenshot-mobile.png)
+![screenshot of portfolio webpage for desktop](images/portfolio-projects-img.png)
 
 ## Credits
 
