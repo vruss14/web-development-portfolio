@@ -1,8 +1,6 @@
 /* Declaring variables for the page's color scheme */
 
 :root {
-    --pink: #FFA07A;
-    --green: #90EE90;
     --yellow: #FFFACD;
     --blue: #E0FFFF;
     --gray: #a09fa1;
@@ -74,7 +72,6 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     display: flex;
-
 }
 
 nav a {
@@ -141,21 +138,10 @@ nav a {
     background-repeat: no-repeat;
     background-size: 100%;
     border: 1rem solid var(--darkturq);
-    z-index: 1;
 }
 
 #large-square:hover, .square:hover {
     background-color: var(--blue);
-}
-
-.square-title {
-    padding: 2rem;
-    margin-right: 10rem;
-    position: absolute;
-    top: 63.5%;
-    left: 0%;
-    background-color: var(--yellow);
-    text-align: left;
 }
 
 .square {
@@ -181,32 +167,36 @@ nav a {
     background-color: var(--blue);
 }
 
-#coding-quiz {
-    background-image: url("images/coding-quiz-screenshot.png");
+.square-title {
+    padding: 2rem;
+    margin-right: 10rem;
+    position: absolute;
+    top: 63.5%;
+    left: 0%;
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+.project {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#coding-quiz {
+    background-image: url("images/coding-quiz-screenshot.png");
 }
 
 #word-guess {
     background-image: url("images/word-guess-screenshot.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #code-snippets {
     background-image: url("images/code-snippets-screenshot.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #weather-dashboard {
     background-image: url("images/weather-forecast-screenshot.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .repo-btn {
@@ -218,7 +208,6 @@ nav a {
     padding: 0.5rem;
     border-radius: 5px;
     margin-top: 5%;
-    margin-left: 27%;
 }
 
 .repo-btn:hover {
@@ -227,7 +216,54 @@ nav a {
     cursor: pointer;
 }
 
+/* Styling for the footer */
+
+footer {
+    background-color: var(--darkturq);
+    color: var(--white);
+    padding: 5%;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem; 
+    border: 0.5rem solid var(--white);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    color: var(--white);
+    line-height: 3rem;
+    background-color: var(--dkgray);
+}
+
 /* Responsive Design styling */
+
+@media screen and (max-width: 1010px) {
+
+    header {
+        padding-bottom: 10rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1, nav {
+        flex-direction: column;
+    }
+
+    nav {
+        order: 2;
+        margin-top: 5rem;
+    }
+
+    nav a {
+        margin: 1rem;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .square {
@@ -242,26 +278,6 @@ nav a {
     
     .square {
       width: 100%;
-    }
-
-    header h1, nav {
-        flex-direction: column;
-    }
-
-    header {
-        padding-bottom: 10rem;
-        display: block;
-        justify-content: center;
-        text-align: center;
-    }
-
-    nav {
-        order: 2;
-        margin-top: 5rem;
-    }
-
-    nav a {
-        margin: 1rem;
     }
 
     .image-wrapper {
@@ -286,8 +302,12 @@ nav a {
         background-position: center;
     }
 
-    #coding-quiz, #word-guess, #code-snippets, #weather-dashboard {
+    .project {
         background-size: 100%;
+    }
+
+    #resize-title {
+        top: 55%;
     }
 
     footer {
@@ -295,31 +315,7 @@ nav a {
         margin-top: 1rem;
     }
 
-    footer p {
-        margin: 3rem;
-    }
-}
-
-/* Styling for the footer */
-
-footer {
-    background-color: var(--darkturq);
-    color: var(--white);
-    padding: 5%;
-    align-items: center;
-    text-align: center;
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-}
-
-footer p {
-    margin: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5rem; 
-    border: 0.5rem solid var(--white);
-    border-radius: 2rem;
-    padding: 1.5rem;
-    color: var(--white);
-    line-height: 3rem;
+    footer a {
+        margin-top: 3rem;
+    } 
 }
