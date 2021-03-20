@@ -23,6 +23,10 @@ a {
   color: white;
 }
 
+a:hover {
+  color:#00CED1;
+}
+
 ​ol,
 ul {
   list-style: none;
