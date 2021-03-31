@@ -133,7 +133,7 @@ nav a:hover {
 
 #large-square {
     width: 80rem;
-    height: 40rem;
+    height: 48.55rem;
     padding: 5rem;
     flex: 1 0 98%;
     margin: 1rem;
@@ -151,7 +151,7 @@ nav a:hover {
 
 .square {
     width: 33.333%;
-    height: 40rem;
+    height: 52rem;
     background-color: var(--dkblue);
     padding: 2rem;
     flex: 1 0 40rem;
@@ -174,12 +174,16 @@ nav a:hover {
 
 .square-title {
     padding: 2rem;
-    margin-right: 10rem;
     position: absolute;
-    top: 63.5%;
+    top: 61.5%;
     left: 0%;
+    width: 100%;
     background-color: var(--yellow);
     text-align: center;
+}
+
+.square-title p {
+    margin-bottom: 1rem;
 }
 
 .project {
@@ -212,7 +216,7 @@ nav a:hover {
     font-weight: bold;
     padding: 0.5rem;
     border-radius: 5px;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .repo-btn:hover {
@@ -268,6 +272,7 @@ footer p {
     nav a {
         margin: 1rem;
     }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -305,14 +310,11 @@ footer p {
     #large-square {
         flex-basis: 40rem;
         background-position: center;
+        height: 52rem;
     }
 
     .project {
         background-size: 100%;
-    }
-
-    #resize-title {
-        top: 55%;
     }
 
     footer {
@@ -327,4 +329,5 @@ footer p {
     .contact-info {
         margin-top: 3rem;
     }
+
 }
