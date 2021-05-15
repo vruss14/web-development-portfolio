@@ -1,21 +1,94 @@
 /* Declaring variables for the page's color scheme */
 
 :root {
-    --yellow: #FFFACD;
-    --blue: #E0FFFF;
     --gray: #a09fa1;
-    --dkgray: #555557;
-    --darkturq: #00CED1;
     --dkblue: #1a2d57;
     --white: #FFFFFF;
     --black: #000000;
+    --olive: #4B6644;
 }
 
-/* Styling for the main content and the border around it */
+/* Layout styling */
 
 body {
     padding: 5%;
-    background-color: var(--dkblue);
+    background-color: var(--olive);
+}
+
+main {
+    padding-left: 3rem;
+    padding-right: 3rem;  
+}
+
+/* Typography styling */
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+p {
+    font-size: 24px;
+}
+
+a {
+    font-size: 24px;
+}
+
+/* Styling for the header and navigation */
+
+header {
+    color: var(--white);
+    padding: 5rem;
+    background-color: var(--dkblue)
+}
+
+nav {
+    font-size: 24px;
+}
+
+nav li:hover {
+    background-color: var(--olive);
+}
+
+/* Styling for the About Me section */
+
+#portfolio-img {
+    float: left;
+    height: 60rem;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+
+#about-me p {
+    margin-bottom: 1%;
+    font-size: 24px;
+}
+
+#about-me {
+    margin-top: 3rem;
+}
+
+.custom-size {
+    font-size: 24px;
+}
+
+
+/* Styling for the Completed Projects section */
+
+#completed-projects {
+    clear: both;
+    margin-top: 1rem;
+}
+
+#completed-projects h2 {
+    text-align: center;
+}
+
+.custom-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content {
@@ -26,280 +99,114 @@ body {
     max-width: 100%;
 }
 
-main {
-    padding: 8rem;  
+.custom-card:hover {
+    border: 0.75rem solid var(--dkblue);
 }
 
-/* Set 1rem to 10px instead of 16px, and styling for headers/paragraph text */
-
-html {
-    font-size: 62.5%;
-}
-
-h1 {
-    display: inline-block;
-    font-size: 5rem;
-    font-family: Garamond, 'Times New Roman', Times, serif;
-}
-
-h2 {
-    color: var(--dkblue);
-    font-family: Garamond, 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2rem;
-}
-
-/* Styling for the header and navigation */
-
-header {
-    background-color: var(--darkturq);
-    color: var(--white);
-    padding: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav {
-    margin-right: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
-    display: flex;
-}
-
-nav a {
-    margin-left: 2.5rem;
-    color: var(--white);
-    border: 0.5rem solid var(--white);
-    border-radius: 2rem;
-    padding: 1.5rem;
-    text-align: center;
-    background-color: var(--dkgray);
-}
-
-nav a:hover {
+.custom-btn {
     background-color: var(--dkblue);
-    transition: ease-in-out 0.5s;
 }
 
-/* Styling for the About Me section */
-
-#portfolio-img {
-    float: left;
-    width: 40rem;
-    height: 40rem;
-    margin-bottom: 2rem;
-    margin-right: 5rem;
-    border: 1rem solid var(--darkturq);
-    border-radius: 5rem;
-}
-
-#about-me p {
-    margin-bottom: 1%;
-}
-
-/* Styling for the Completed Projects section */
-
-#completed-projects {
-    clear: both;
-    margin-top: 5rem;
-}
-
-#completed-projects h2 {
-    text-align: center;
-}
-
-.project-images {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-#large-square a, .square a {
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#large-square {
-    width: 80rem;
-    height: 48.55rem;
-    padding: 5rem;
-    flex: 1 0 98%;
-    margin: 1rem;
-    position: relative;
-    background-image: url("images/dingen-screenshot.png");
-    background-position: 5% 0%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: 1rem solid var(--darkturq);
-}
-
-#large-square:hover, .square:hover {
-    background-color: var(--blue);
-}
-
-.square {
-    width: 33.333%;
-    height: 52rem;
-    background-color: var(--dkblue);
-    padding: 2rem;
-    flex: 1 0 40rem;
-    margin: 1rem;
-    position: relative;
-    border: 1rem solid var(--gray);
-}
-
-.square:nth-child(3n) {
-    background-color: var(--darkturq);
-}
-
-.square:nth-child(3n+1) {
-    background-color: var(--dkgray);
-}
-
-.square:hover {
-    background-color: var(--blue);
-}
-
-.square-title {
-    padding: 2rem;
-    position: absolute;
-    top: 61.5%;
-    left: 0%;
-    width: 100%;
-    background-color: var(--yellow);
-    text-align: center;
-}
-
-.square-title p {
-    margin-bottom: 1rem;
-}
-
-.project {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#coding-quiz {
-    background-image: url("images/coding-quiz-screenshot.png");
-}
-
-#word-guess {
-    background-image: url("images/word-guess-screenshot.png");
-}
-
-#code-snippets {
-    background-image: url("images/code-snippets-screenshot.png");
-}
-
-#weather-dashboard {
-    background-image: url("images/weather-forecast-screenshot.png");
-}
-
-.repo-btn {
-    text-align: center;
-    background-color: var(--dkblue);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin-top: 1%;
-}
-
-.repo-btn:hover {
-    background-color: white;
-    color: var(--dkblue);
-    cursor: pointer;
+.custom-btn:hover {
+    background-color: var(--olive);
 }
 
 /* Styling for the footer */
 
 footer {
-    background-color: var(--darkturq);
+    background-color: var(--dkblue);
     color: var(--white);
     padding: 5%;
     align-items: center;
     text-align: center;
     font-size: 5rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-footer p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5rem; 
-    border: 0.5rem solid var(--white);
-    border-radius: 2rem;
-    padding: 1.5rem;
-    color: var(--white);
-    line-height: 3rem;
-    background-color: var(--dkgray);
+#email-svg {
+    margin-right: 2rem;
+}
+#phone-svg {
+    margin-right: 1rem;
 }
 
+#phone-svg {
+    margin-left: 5rem;
+}
+
+#github-logo {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#linkedin-logo {
+    margin-left: 5rem;
+}
+
+.footer-icon:hover {
+    transform: scale(1.3);
+    transition: .3s ease-in-out;
+}
+
+#copyright {
+    margin-left: 30%;
+    margin-right: 30%;
+}
 /* Responsive Design styling */
 
 @media screen and (max-width: 1010px) {
 
     header {
-        padding-bottom: 10rem;
         display: block;
-        justify-content: center;
         text-align: center;
     }
 
-    header h1, nav {
-        flex-direction: column;
-    }
-
-    nav {
-        order: 2;
-        margin-top: 5rem;
-    }
-
     nav a {
-        margin: 1rem;
+        margin: 0.5rem;
+        text-align: center;
     }
 
-}
+    footer {
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
 
-@media screen and (max-width: 992px) {
-    .square {
-      width: 50%;
+    #email-svg, #phone-svg, #github-logo, #linkedin-logo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     main {
-        padding: 2rem;
-    }
-    
-    .square {
-      width: 100%;
+        padding: 0rem;
     }
 
     .image-wrapper {
         display: flex;
         flex-basis: 4rem;
         justify-content: center;
-        margin-left: 5rem;
+        margin-left: 3rem;
+    }
+
+    .display-4 {
+        font-size: 32px;
+    }
+
+    .custom-wrapper {
+        width: 100%;
+
+    }
+
+    .custom-card {
+        width: 95%;
     }
 
     #portfolio-img {
-        flex-basis: 40rem;
-        margin-top: 5rem;
+        height: 30rem;
     }
 
     #about-me h2 {
@@ -307,27 +214,17 @@ footer p {
         margin-top: 5rem;
     }
 
-    #large-square {
-        flex-basis: 40rem;
-        background-position: center;
-        height: 52rem;
+    #about-me p {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .project {
         background-size: 100%;
     }
 
-    footer {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    footer a {
-        margin-top: 3rem;
-    } 
-
-    .contact-info {
-        margin-top: 3rem;
+    .custom-size {
+        font-size: 16px;
     }
 
 }
