@@ -167,6 +167,10 @@ footer {
         text-align: center;
     }
 
+    #portfolio-img {
+        height: 30rem;
+    }
+
     footer {
         flex-direction: column;
         margin-top: 1.5rem;
@@ -203,10 +207,6 @@ footer {
 
     .custom-card {
         width: 95%;
-    }
-
-    #portfolio-img {
-        height: 30rem;
     }
 
     #about-me h2 {
