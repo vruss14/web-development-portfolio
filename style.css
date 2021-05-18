@@ -105,6 +105,8 @@ nav li:hover {
 
 .custom-btn {
     background-color: var(--dkblue);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .custom-btn:hover {
@@ -155,11 +157,15 @@ footer {
 }
 /* Responsive Design styling */
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
 
     header {
         display: block;
         text-align: center;
+    }
+
+    #custom-navbar {
+        flex-direction: column;
     }
 
     nav a {
@@ -189,6 +195,10 @@ footer {
         padding: 0rem;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
     .image-wrapper {
         display: flex;
         flex-basis: 4rem;
@@ -196,27 +206,35 @@ footer {
         margin-left: 3rem;
     }
 
+    .display-2 {
+        font-size: 3.5rem;
+    }
+
+    .display-3 {
+        font-size: 3rem;
+    }
+
     .display-4 {
-        font-size: 32px;
+        font-size: 1.65rem;
     }
 
     .custom-wrapper {
         width: 100%;
-
     }
 
     .custom-card {
-        width: 95%;
+        width: 100%;
     }
 
     #about-me h2 {
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
 
     #about-me p {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 20px;
     }
 
     .project {
@@ -227,4 +245,58 @@ footer {
         font-size: 16px;
     }
 
+    p {
+        font-size: 20px;
+    }
+
+    #copyright {
+        font-size: 16px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .display-2 {
+        font-size: 2.5rem;
+    }
+
+    .display-3 {
+        font-size: 2rem;
+    }
+
+    .display-4 {
+        font-size: 0.85rem;
+    }
+
+    #about-me p {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .custom-size {
+        font-size: 11px;
+    }
+
+    .custom-btn {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #copyright {
+        font-size: 14px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
 }
