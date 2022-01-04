@@ -55,7 +55,7 @@ nav li:hover {
 
 #portfolio-img {
     float: left;
-    height: 1024px;
+    height: 100vh;
     margin-bottom: 2rem;
     margin-right: 3rem;
 }
@@ -97,10 +97,6 @@ nav li:hover {
     border: 1rem solid var(--gray);
     border-radius: 5rem;
     max-width: 100%;
-}
-
-.custom-card:hover {
-    border: 0.75rem solid var(--dkblue);
 }
 
 .custom-btn {
